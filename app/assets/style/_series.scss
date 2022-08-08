@@ -1,0 +1,322 @@
+.series {
+    .classification {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-size: $font-size-base*2;
+        font-weight: 500;
+
+        @include pad {
+            margin: 0 -12px;
+        }
+
+        @include pad-below {
+            font-size: $font-size-base;
+        }
+    }
+
+    .classification-item {
+        width: 33.34%;
+        border: 1px solid $secondary-light;
+        padding: $spacer-base*1.5 0px;
+    }
+
+    .classification-item:hover {
+        background: $primary-light;
+        color: $primary-dark;
+    }
+
+    .classification-item.active {
+        border-bottom: 8px solid $primary;
+    }
+
+    .product-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-header-1 {
+        width: 50%;
+        height: 296px;
+        background: url(../images/product-header-1.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+
+        @include pad {
+            background: url(../images/product-header-sm-1.png) no-repeat;
+        }
+
+        @include pad-below {
+            background-position: center center;
+        }
+    }
+
+    .product-header-2 {
+        width: 50%;
+        height: 296px;
+        background: url(../images/product-header-2.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+
+        @include pad {
+            background: url(../images/product-header-sm-2.png) no-repeat;
+        }
+
+        @include pad-below {
+            background-position: center center;
+        }
+    }
+
+    .container-products {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: $spacer-2xl $spacer-base;
+        text-align: center;
+
+        @include pad-below {
+            padding: $spacer-base*2.5 $spacer-base $spacer-xl $spacer-base;
+        }
+    }
+
+    h2 {
+        font-size: $font-size-base*2.625;
+        font-weight: 500;
+    }
+
+    h3 {
+        margin-bottom: $spacer-md;
+        font-size: $font-size-base*2;
+    }
+
+    .product-group {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 -12px;
+    }
+
+    .product-optical {
+        width: 25%;
+        padding: 0 12px 80px 12px;
+
+        @include pad {
+            width: 50%;
+            padding: 0 12px 40px 12px;
+        }
+
+        @include pad-below {
+            width: 100%;
+            padding: 0 12px 24px 12px;
+        }
+    }
+
+    .product-image-1 {
+        height: 168px;
+        background: url(../images/product-1.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-2 {
+        height: 168px;
+        background: url(../images/product-2.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-3 {
+        height: 168px;
+        background: url(../images/product-3.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-4 {
+        height: 168px;
+        background: url(../images/product-4.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-5 {
+        height: 168px;
+        background: url(../images/product-5.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-6 {
+        height: 168px;
+        background: url(../images/product-6.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-7 {
+        height: 168px;
+        background: url(../images/product-7.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-8 {
+        height: 168px;
+        background: url(../images/product-8.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-9 {
+        height: 168px;
+        background: url(../images/product-9.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-10 {
+        height: 168px;
+        background: url(../images/product-10.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-11 {
+        height: 168px;
+        background: url(../images/product-11.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-image-12 {
+        height: 168px;
+        background: url(../images/product-12.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .product-head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-number {
+        font-size: $h4-font-size;
+    }
+
+    .product-price {
+        font-weight: 500;
+        color: $primary;
+        font-size: $h4-font-size;
+    }
+
+    .product-color {
+        display: flex;
+        gap: 8px;
+    }
+
+    .product-color-1 {
+        background: #5F3E2D;
+        border-radius: 4px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .product-color-2 {
+        background: #B75929;
+        border-radius: 4px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .pagination {
+        display: inline-block;
+
+        @include pad-below {
+            margin-top: $spacer-xl;
+        }
+
+        a {
+            color: #000000;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #000000;
+        }
+
+        a.active {
+            background-color: #000000;
+            color: $accent;
+            border: 1px solid #000000;
+        }
+
+        a:hover:not(.active) {
+            background-color: $secondary-light;
+        }
+    }
+
+    .product-header-3 {
+        width: 50%;
+        height: 296px;
+        background: url(../images/product-header-3.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+
+        @include pad {
+            background: url(../images/product-header-sm-3.png) no-repeat;
+        }
+
+        @include pad-below {
+            background-position: center center;
+        }
+    }
+
+    .product-header-4 {
+        width: 50%;
+        height: 296px;
+        background: url(../images/product-header-4.png) no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background-position: center center;
+
+        @include pad {
+            background: url(../images/product-header-sm-4.png) no-repeat;
+        }
+
+        @include pad-below {
+            background-position: center center;
+        }
+    }
+
+    .product-sunglasses {
+        width: 33.33%;
+        padding: 0 12px 80px 12px;
+
+        @include pad {
+            width: 50%;
+            padding: 0 12px 40px 12px;
+        }
+
+        @include pad-below {
+            width: 100%;
+            padding: 0 12px 24px 12px;
+        }
+
+    }
+
+}

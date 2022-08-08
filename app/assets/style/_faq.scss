@@ -1,0 +1,45 @@
+.faq {
+    .container {
+        padding: $spacer-3xl $spacer-base $spacer-2xl $spacer-base;
+
+        @include pad-below {
+            padding: $spacer-base*2.5 $spacer-base $spacer-xl $spacer-base;
+        }
+
+        .faq-block {
+            max-width: 856px;
+        }
+
+        h3 {
+            font-size: $h2-font-size;
+            border-left: 8px solid $primary-dark;
+            font-weight: 700;
+            padding-left: $spacer-base;
+            margin-bottom: $spacer-md;
+
+            @include pad-below {
+                font-size: $font-size-base*2;
+                margin-bottom: $spacer-base*1.5;
+            }
+        }
+
+        h4 {
+            margin-bottom: $spacer-base*1.5;
+            font-weight: 700;
+        }
+
+        h5 {
+            margin-bottom: $spacer-sm;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: $spacer-md;
+
+            @include pad-below {
+                margin-bottom: $spacer-base*1.5;
+
+            }
+        }
+    }
+}

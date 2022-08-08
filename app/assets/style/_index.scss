@@ -1,0 +1,181 @@
+.header {
+    background: $primary;
+    color: $accent;
+
+    .container {
+        @include pad-below {
+            padding: unset;
+        }
+    }
+
+    .header-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @include pad-below {
+            flex-direction: column;
+        }
+    }
+
+    h1 a {
+        display: block; //a 連結為行內元素，轉為區塊元素
+        width: 80px;
+        height: 48px;
+        background: url(../images/logo-white.png);
+        background-size: cover;
+        //圖片取代文字技巧 
+        text-indent: 101%; //首行縮排
+        white-space: nowrap; //希望元素在第一排上面，沒有斷行
+        overflow: hidden; //自動隱藏超出的文字或圖片
+        margin: $spacer-base 0px;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: $h5-font-size;
+
+        @include pad-below {
+            text-align: center;
+            width: 100%;
+            font-size: $font-size-base;
+        }
+
+        a {
+            padding: $spacer-md;
+
+            &:hover {
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    li {
+        @include pad-below {
+            width: 50%;
+            padding: $spacer-sm*1.5 0px;
+            outline: 1px $accent solid;
+
+            &:hover {
+                background: $primary-dark;
+            }
+        }
+    }
+}
+
+.footer {
+    background: $primary;
+    color: $accent;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #db9694;
+        padding-top: $spacer-lg;
+        padding-bottom: $spacer-md;
+
+        @include pad-below {
+            padding-top: $spacer-base*1.5;
+            padding-bottom: $spacer-base*1.5;
+        }
+    }
+
+    .nav {
+        display: flex;
+
+        @include pad-below {
+            display: none;
+        }
+
+        li {
+            padding: 22px 48px 22px 0;
+
+            @include pad {
+                padding: 10px 32px 22px 0;
+            }
+        }
+
+        li:hover {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+
+    .contact {
+        font-size: $font-size-base*2.25;
+
+        @include pad-below {
+            font-size: $font-size-base;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-right: 22px;
+
+                @include pad-below {
+                    margin-right: 11px;
+                }
+            }
+        }
+    }
+
+    .sidebar img {
+        width: 48px;
+        height: 48px;
+        margin-left: $spacer-md;
+
+        @include pad-below {
+            width: 24px;
+            height: 24px;
+            margin-left: $spacer-sm;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: $spacer-md 0px;
+
+        @include pad-below {
+            flex-direction: column;
+            padding-top: $spacer-base;
+            padding-bottom: $spacer-base*1.5;
+        }
+
+        .link {
+            display: flex;
+            font-size: $font-size-sm;
+
+            @include pad-below {
+                flex-wrap: wrap;
+                font-size: $font-size-base;
+            }
+
+            a {
+                padding: $spacer-base*1.5;
+
+                @include pad-below {
+                    padding: unset;
+                }
+
+                &:hover {
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+            }
+
+            li {
+                @include pad-below {
+                    width: 100%;
+                    margin-top: $spacer-sm;
+                }
+            }
+        }
+    }
+}

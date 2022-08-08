@@ -1,0 +1,132 @@
+.store {
+    .container {
+        padding: $spacer-3xl $spacer-base $spacer-xl $spacer-base;
+
+        @include pad-below {
+            padding: $spacer-base*2.5 $spacer-base $spacer-xl $spacer-base;
+        }
+
+        h3 {
+            font-size: $h2-font-size;
+            border-left: 8px solid $primary-dark;
+            font-weight: 700;
+            padding-left: $spacer-base;
+            margin-bottom: $spacer-md;
+
+            @include pad-below {
+                font-size: $h4-font-size;
+            }
+        }
+
+        .choice-store {
+            margin-bottom: $spacer-base*2.5;
+
+            select {
+                width: 304px;
+                height: 38px;
+                border: 1px solid #CED4DA;
+                margin-left: 16px;
+            }
+        }
+
+        .store-group {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px -12px;
+        }
+
+        .store-block {
+            width: 33.33%;
+            padding: 0px 12px 24px 12px;
+
+            @include pad {
+                width: 50%;
+            }
+
+            @include pad-below {
+                width: 100%;
+            }
+        }
+
+        .store-image-1 {
+            min-height: 224px;
+            background: url(../images/store-1.png) no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            background-position: center center;
+        }
+
+        .store-image-2 {
+            min-height: 224px;
+            background: url(../images/store-2.png) no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            background-position: center center;
+        }
+
+        .store-image-3 {
+            min-height: 224px;
+            background: url(../images/store-3.png) no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            background-position: center center;
+        }
+
+        .store-image-4 {
+            min-height: 224px;
+            background: url(../images/store-4.png) no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            background-position: center center;
+        }
+
+        .store-image-5 {
+            min-height: 224px;
+            background: url(../images/store-5.png) no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            background-position: center center;
+        }
+
+        .store-name {
+            padding: 8px 24px;
+            border: 1px solid #e0e0e0;
+            font-size: $h4-font-size;
+        }
+
+        .store-detail {
+            padding: 16px 24px;
+            border: 1px solid #e0e0e0;
+
+            li {
+                font-size: $h5-font-size;
+                display: flex;
+                align-items: baseline;
+            }
+
+            span {
+                font-size: $h6-font-size;
+                margin-right: 11px;
+            }
+
+        }
+
+        .store-detail-btn {
+            background: #000000;
+            color: $accent;
+            width: 100%;
+            font-size: $h6-font-size;
+
+           
+
+            a {
+                padding: $spacer-base 0px;
+                display: block;
+                 &:hover {
+                opacity: 0.8;
+            }
+            }
+        }
+
+    }
+}

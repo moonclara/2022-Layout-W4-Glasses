@@ -1,0 +1,409 @@
+.banner {
+    background: url(../images/home-header.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: $primary-dark;
+    min-height: 787px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    @include pad-below {
+        background: url(../images/home-header-sm.png) no-repeat;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 32px;
+    }
+
+    .subTitle {
+        font-size: $font-size-base*2.25;
+
+        @include pad-below {
+            font-size: $font-size-base;
+        }
+    }
+
+    .title {
+        font-size: $h1-font-size;
+        font-weight: 700;
+
+        @include pad-below {
+            font-size: $font-size-base*1.5;
+        }
+    }
+
+    .buy {
+        color: $accent;
+        background-color: $primary;
+        padding: 6px 12px;
+        border: none;
+        font-size: $h5-font-size;
+
+        &:hover {
+            background-color: $primary-dark;
+        }
+    }
+
+}
+
+.profession {
+    padding: $spacer-2xl 0px;
+    background-color: $primary-light;
+
+    @include pad-below {
+        padding: $spacer-base*2.5 0px;
+    }
+
+    .container {
+        @include pad {
+            padding: 0px $spacer-base*2.25;
+        }
+    }
+
+    h2 {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        color: $primary-dark;
+        text-align: center;
+        margin-bottom: $spacer-md;
+
+        @include pad-below {
+            font-size: $h4-font-size;
+            margin-bottom: $spacer-base*1.5;
+        }
+    }
+
+    .profession-group {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .profession-block {
+        width: 25%;
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include pad {
+            width: 50%;
+        }
+
+        @include pad-below {
+            width: 100%;
+        }
+    }
+
+    img {
+        margin-bottom: $spacer-base*1.5;
+        width: 83px;
+        height: 83px;
+    }
+
+    h3 {
+        font-size: $h4-font-size;
+        font-weight: 700;
+        color: $primary-dark;
+        margin-bottom: $spacer-sm;
+    }
+
+}
+
+.classic {
+    padding: $spacer-2xl 0px;
+
+    @include pad-below {
+        padding: $spacer-base*2.5 0px;
+    }
+
+    h2 {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        color: $primary-dark;
+        margin-bottom: $spacer-lg;
+        text-align: center;
+
+        @include pad-below {
+            font-size: $font-size-base*1.5;
+            margin-bottom: $spacer-base*1.5;
+        }
+    }
+
+    .classic-group {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .classic-block {
+        width: 33.33%;
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include pad {
+            width: 50%;
+            margin: 0px 216px;
+        }
+
+        @include pad-below {
+            width: 100%;
+            margin: 0px;
+        }
+    }
+
+    img {
+        margin-bottom: $spacer-sm;
+    }
+
+    img:hover {
+        opacity: 0.8;
+    }
+
+    p {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        color: $primary;
+        margin-bottom: $spacer-2xl;
+        font-style: $font-style-italic;
+    }
+
+}
+
+.joint {
+    background: url(../images/index-bg.png) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding: $spacer-2xl 0;
+
+    @include pad-below {
+        padding: $spacer-2xl/2 0;
+
+    }
+
+    h2 {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        color: $accent;
+        margin-bottom: $spacer-lg;
+        text-align: center;
+
+        @include pad-below {
+            font-size: $font-size-base*1.5;
+            margin-bottom: $spacer-base*1.5;
+        }
+
+    }
+
+    .joint-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .joint-block {
+        width: 50%;
+        background-color: $accent;
+        font-style: $font-style-italic;
+
+        @include pad {
+            width: 100%;
+            margin-bottom: $spacer-base*1.5;
+        }
+    }
+
+    .joint-block-1 {
+        background: url(../images/home-section4-1.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        min-height: 240px;
+
+        @include pad-below {
+            background: url(../images/home-section4-1-sm.png) no-repeat;
+        }
+    }
+
+
+
+    .joint-block-2 {
+        background: url(../images/home-section4-2.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        min-height: 240px;
+
+        @include pad-below {
+            background: url(../images/home-section4-2-sm.png) no-repeat;
+        }
+    }
+
+    p {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        color: $primary;
+        padding: $spacer-sm 0px;
+        text-align: center;
+    }
+}
+
+.customer {
+    padding: $spacer-2xl 0;
+
+    @include pad-below {
+        padding: $spacer-base*2.5 0;
+    }
+
+    h2 {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        color: $primary-dark;
+        margin-bottom: $spacer-lg;
+        text-align: center;
+
+        @include pad-below {
+            font-size: $font-size-base*1.5;
+            margin-bottom: $spacer-base*1.5;
+        }
+    }
+
+    .customer-group {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .customer-block {
+        width: 25%;
+        padding: 12px;
+
+        @include pad {
+            width: 50%;
+        }
+
+        @include pad-below {
+            width: 100%;
+        }
+    }
+
+    h4 {
+        margin-bottom: $spacer-sm;
+    }
+
+    span {
+        font-size: $font-size-sm;
+        color: $secondary-dark;
+    }
+
+    .card-body {
+        padding: $spacer-base;
+        box-shadow: 0px 2px 6px $secondary;
+        border: 1px solid #DEE2E6;
+        border-radius: 4px;
+        height: 205px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    img {
+        display: block;
+    }
+
+    img:hover {
+        opacity: 0.8;
+    }
+}
+
+.contactus {
+    background: $primary-light;
+    padding: $spacer-2xl 0;
+
+    @include pad-below {
+        padding: $spacer-base*2.5 0;
+    }
+
+    .container {
+        max-width: 636px;
+    }
+
+    h2 {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        color: $primary-dark;
+        margin-bottom: $spacer-lg;
+        text-align: center;
+
+        @include pad-below {
+            font-size: $h4-font-size;
+            margin-bottom: $spacer-base*1.5;
+        }
+    }
+
+    p {
+        font-size: $h5-font-size;
+        margin-bottom: $spacer-base*1.5;
+
+        @include pad-below {
+            font-size: $font-size-base;
+        }
+    }
+
+    form label {
+        margin-bottom: $spacer-sm;
+        display: block;
+    }
+
+    form input {
+        width: 100%;
+        margin-bottom: $spacer-base;
+        height: 36px;
+        border: 1px solid #000000;
+        background: $primary-light;
+    }
+
+    .agree {
+        margin-bottom: $spacer-lg;
+    }
+
+    .agree input {
+        margin: 0px $spacer-base*0.25;
+    }
+
+    .check-btn {
+        background: $primary;
+        color: $accent;
+        border: unset;
+        padding: $spacer-base 176px;
+        margin: 0 auto;
+
+        &:hover {
+            background: $primary-dark;
+        }
+
+        @include pad-below {
+            background: $primary;
+            color: $accent;
+            border: unset;
+            padding: $spacer-base 136px;
+            margin: 0 auto;
+        }
+    }
+
+    input,
+    textarea {
+        padding: 6px 12px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    #opinion {
+        background: $primary-light;
+        width: 100%;
+    }
+}
